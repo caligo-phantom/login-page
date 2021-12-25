@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Sign In</title>
 </head>
-<body>
+<body class="bg">
     <form action = "">
-        <h3><u>Sign In</u></h3>
-        <p>Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "email" value = "sample@mail.com" /></p>
-        <p>Password&nbsp;&nbsp;<input type = "password" value = "password"/></p>
-        <button type="submit" class="signupbtn" formaction="signup.html">Sign Up</button>
-        &emsp;
-        <button type="submit" class="signinbtn" formaction="index.html">Sign In</button>
+        <span class = "grid">
+        <span class = "flex-box">
+            <img src="assets/tree.jpg" width="200px" class="img">
+            <h3><u>Sign In</u></h3>
+            <span><input type = "email" placeholder = "Email" /></span>
+            <br>
+            <span><input type = "password" placeholder = "Password"/></span>
+            <br>
+            <button type="submit" class="signinbtn" formaction="index.html">Sign In</button>
+            <span>Don't have an account?<button type="submit" class="signupbtn" formaction="signup.html">Sign Up</button></span>
+        </span>
+        </span>
     </form>
 </body>
 </html>
