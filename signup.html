@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Sign Up</title>
 </head>
-<body>
+<body class="bg">
     <form action="">
-        <h3><u>Sign Up</u></h3>
-        <p>First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "text" value = "Enter First Name" /></p>
-        <p>Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "text" value = "Enter Last Name" /></p>
-        <p>Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "email" value = "sample@mail.com" /></p>
-        <p>Birthday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "date"/></p>
-        <p>
-            Gender
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span>Male</span><input name = "btn" type = "radio">
-            &nbsp;&nbsp;&nbsp; 
-            <span>Female</span><input name = "btn" type = "radio">
-        </p>
-        <p>Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "password" value = "password"/></p>
-        <p>Re-Enter Password&nbsp;&nbsp;&nbsp;&nbsp;<input type = "password" value = "password"/></p>
-        <button type="submit" class="signupbtn" formaction="signup.html">Sign Up</button>
-        &emsp;
-        <button type="submit" class="signinbtn" formaction="index.html">Sign In</button>
+        <span class = "flex-box">
+            <img src="assets/tree.jpg" width="200px" class="img">
+            <h3><u>Sign Up</u></h3>
+            <span><input type = "text" placeholder = "First Name" /></span>
+            <br>
+            <span><input type = "text" placeholder = "Last Name" /></span>
+            <br>
+            <span><input type = "email" placeholder = "Email" /></span>
+            <br>
+            <span><input type = "date"/></span>
+            <br>
+            <span>
+                <span class = "genders">
+                    <span style="padding-right: 40px">Male<input name = "btn" type = "radio"></span>
+                    Female<input name = "btn" type = "radio">
+                </span>
+            </span>
+            <br>
+            <span><input type = "password" placeholder = "Password"/></span>
+            <br>
+            <span><input type = "password" placeholder = "Re-enter Password"/></span>
+            <br>
+            <button type="submit" class="signupbtn" formaction="signup.html">Sign Up</button>
+            <span>Already have an account?<button type="submit" class="signinbtn" formaction="index.html">Sign In</button></span>
+        </span>
     </form>
 </body>
 </html>
