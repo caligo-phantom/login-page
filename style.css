@@ -1,17 +1,6 @@
-.bg {
-    animation-name: bgcolor;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+* {
+    color:whitesmoke;
 }
-
-@keyframes bgcolor {
-    0%   {background-color: #d5fefd;}
-    25%  {background-color: #e7eff9;}
-    50%  {background-color: #e4eee9;}
-    75% {background-color: #f3f4f7;}
-    100% {background-color: #d3d3d3;}
-  }
 
 .flex-box{
     display: flex;
@@ -22,7 +11,16 @@
     height: 95vh;
 }
 
-button {background-color: #7cffcb; border-width: 0px; border-radius: 12px; padding-inline: 10px;
+.img{
+    float: none;
+    animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+    100% {transform: rotate(360deg);}
+}
+
+button {background-color: black; border-width: 0px; border-radius: 12px; padding-inline: 10px; padding-top: 5px; padding-bottom: 5px;
         margin: 10px;}
 
 input { text-align: center;}
@@ -30,13 +28,18 @@ input { text-align: center;}
 span {padding: 2px;}
 
 .signupbtn:hover {
-    background-color: #63d471;
+    background-color: blue;
 }
 
 .signinbtn:hover {
-    background-color: #63d471;
+    background-color: blue;
 }
 
 input:focus {
     box-shadow: 5px 5px #63d471;
+}
+
+.form{
+    display: grid;
+    margin: 10px;
 }
