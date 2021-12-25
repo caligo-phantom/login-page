@@ -1,0 +1,42 @@
+.bg {
+    animation-name: bgcolor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes bgcolor {
+    0%   {background-color: #d5fefd;}
+    25%  {background-color: #e7eff9;}
+    50%  {background-color: #e4eee9;}
+    75% {background-color: #f3f4f7;}
+    100% {background-color: #d3d3d3;}
+  }
+
+.flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 95vh;
+}
+
+button {background-color: #7cffcb; border-width: 0px; border-radius: 12px; padding-inline: 10px;
+        margin: 10px;}
+
+input { text-align: center;}
+
+span {padding: 2px;}
+
+.signupbtn:hover {
+    background-color: #63d471;
+}
+
+.signinbtn:hover {
+    background-color: #63d471;
+}
+
+input:focus {
+    box-shadow: 5px 5px #63d471;
+}
