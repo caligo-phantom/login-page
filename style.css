@@ -43,3 +43,7 @@ input:focus {
     display: grid;
     margin: 10px;
 }
+
+input[type="date"]{
+    color: rgba(0, 0, 0, 0.555);
+}
